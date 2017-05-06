@@ -1,5 +1,4 @@
-.main-header{
-    width: auto;
-    min-height: 20px;
-    color: black;
+body {
+    background: #000000 url("barbershop-index.jpg") no-repeat;
 }
+
