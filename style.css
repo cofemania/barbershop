@@ -52,7 +52,7 @@ body {
 .features {
     background: indianred;
     width: 100%;
-
+    margin-bottom: 80px;
 }
 
 .features-item {
@@ -61,5 +61,58 @@ body {
     margin-right: 20px;
     background: yellow;
     min-height: 175px;
+
+}
+.features-item:last-child {
+    margin-right: 0px;
+}
+
+.index-content {
+    padding: 50px 80px;
+    background: gray;
+    margin-bottom: 35px;
+
+}
+.index-content-left {
+    min-height: 330px;
+    background: olive;
+    float: left;
+    width: 380px;
+
+}
+.index-content-right {
+    min-height: 330px;
+    background: palegreen;
+    float: right;
+    width: 300px;
+}
+
+.main-footer {
+    margin-top: 65px;
+    background: hotpink;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer-contacts {
+    min-height: 90px;
+    background: blue;
+    width: 320px;
+    float: left;
+    margin-right: 60px;
+}
+
+.footer-social {
+    min-height: 90px;
+    background: maroon;
+    width: 180px;
+    float: left;
+}
+
+.footer-copyright {
+    min-height: 90px;
+    background:khaki;
+    width: 180px;
+    float: right;
 
 }
