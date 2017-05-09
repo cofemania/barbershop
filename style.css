@@ -2,7 +2,11 @@ body {
     min-width: 960px;
     margin: 0;
     padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
 }
 
 .main-header {
@@ -13,6 +17,11 @@ body {
     min-height: 70px;
     width: 860px;
     float: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
     background: rebeccapurple;
 }
 
@@ -20,6 +29,11 @@ body {
     min-height: 70px;
     width: 70px;
     float: right;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
     background: rebeccapurple;
 }
 
