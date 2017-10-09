@@ -1,4 +1,4 @@
-html
+html,
 body {
     width: auto;
     margin: 0;
@@ -13,6 +13,10 @@ body {
 }
 
 
+/*==============================
+-------------header-------------
+===============================*/
+
 .main-header {
     background: #000000;
     color: #ffffff;
@@ -23,7 +27,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
 .main-navigator {
@@ -35,6 +38,7 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-right: auto;
 }
 
 .main-navigator a {
@@ -42,6 +46,7 @@ body {
     text-decoration: none;
     display: block;
     padding: 25px 20px;
+    transition: all 0.1s;
 }
 .main-navigator a:hover {
     background: #242424;
@@ -60,7 +65,10 @@ body {
     padding: 0;
     list-style: none;
     font-size: 0;
-
+}
+.user-block {
+    margin-left: auto;
+    transition: all 0.3s;
 }
 
 .login {
@@ -84,6 +92,7 @@ body {
     height: 17px;
     background: transparent url("../img/icons.png") no-repeat -43px -16px;
     opacity: 0.3;
+    transition: all 0.3s;
 }
 
 .user-block a:hover {
@@ -93,13 +102,9 @@ body {
 opacity: 1;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/*index*/
+/*==============================
+-------------index--------------
+===============================*/
 
 .container {
     width: 940px;
@@ -127,13 +132,19 @@ opacity: 1;
 .features {
     width: 100%;
     margin-bottom: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .features-item {
     width: 300px;
-    float: left;
-    margin-right: 20px;
-    min-height: 175px;
     text-align: center;
 }
 
@@ -165,11 +176,16 @@ opacity: 1;
     margin-bottom: 0;
 }
 
-.features-item:last-child {
-    margin-right: 0px;
-}
-
 .index-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     padding: 50px 80px;
     margin-bottom: 35px;
     color: #000000;
@@ -179,12 +195,11 @@ opacity: 1;
 
 }
 .index-content-left {
-    float: left;
     width: 380px;
+    margin-right: auto;
 
 }
 .index-content-right {
-    float: right;
     width: 300px;
 }
 .news-preview li {
@@ -247,31 +262,36 @@ a.btn {
     padding: 15px 25px;
 }
 
-
 .main-footer {
+    display: flex;
+    background: #262626;
     margin-top: 65px;
     padding-top: 60px;
     padding-bottom: 40px;
 }
 
+.main-footer .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .footer-contacts {
-    min-height: 90px;
-    width: 320px;
-    float: left;
-    margin-right: 60px;
+    margin-right: 90px;
+    background: fuchsia;
 }
 
 .footer-social {
-    min-height: 90px;
-    width: 180px;
-    float: left;
+    background: greenyellow;
 }
 
 .footer-copyright {
-    min-height: 90px;
-    width: 180px;
-    float: right;
+    margin-left: auto;
+    background: aqua;
 }
 
-/*item*/
+/*==============================
+-------------item---------------
+===============================*/
 
