@@ -55,19 +55,22 @@ body {
 }
 
 .main-navigator li {
-    display: inline-block;
+    display: flex;
     vertical-align: top;
     font-size: 16px;
     line-height: 20px;
-    vertical-align: top;
 }
+
 
 .main-navigator ul {
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 0;
+    display: flex;
 }
+
+
 .user-block {
     margin-right: auto;
     transition: all 0.3s;
@@ -207,7 +210,14 @@ main {
 .news-preview li {
     margin-left: -40px;
     list-style: none;
+}
 
+.news-preview p {
+    margin-bottom: 0;
+}
+
+.news-preview time {
+    text-transform: lowercase;
 }
 
 .index-content-title {
@@ -217,14 +227,19 @@ main {
     margin-bottom: 25px;
 }
 
+.gallery {
+    position: relative;
+    height: 260px;
+}
+
 .gallery-content {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
+    height: 164px;
+    margin: 0;
 }
 
 .gallery-content img {
-    display: block;
+    background: gray;
+    border: 5px solid white;
 }
 
 .btn {
@@ -237,31 +252,43 @@ main {
     line-height: 24px;
     text-decoration: none;
     letter-spacing: 0;
+    cursor: pointer;
+    padding: 10px 33px;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 16px;
 }
 
-a.btn {
-    letter-spacing: 0.2px;
-    padding: 15px 35px;
+.btn:active,
+.btn:hover {
+    background: #663d15;
 }
+
+
 
 
 .gallery-prev,
 .gallery-next {
-    font-weight: bold;
-    padding: 15px 50px;
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font: inherit;
 }
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
 .gallery-prev {
-    margin-left: -5px;
-    margin-right: 15px;
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
 }
 
 .adress {
     margin-right: 10px;
-    padding: 15px 30px;
-}
-.tel {
-    padding: 15px 25px;
 }
 
 
