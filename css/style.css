@@ -290,6 +290,20 @@ main {
     margin-right: 10px;
 }
 
+..oppointment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.oppointment-form input {
+    background: #f9f6f3;
+    border: 2px solid black;
+    height: 39px;
+    width: 136px;
+    margin-top: 20px;
+}
+
 
 /*==============================
 ------------footer--------------
