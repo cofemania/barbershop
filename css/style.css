@@ -35,7 +35,7 @@ body {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
-    width: 960px;
+    width: 940px;
 }
 
 .main-navigator {
@@ -312,6 +312,10 @@ main {
     margin-bottom: 20px;
     width: 106px;
 }
+.oppointment-form input:focus {
+    border: 2px solid #663d15;
+    outline: none;
+}
 
 
 .submit {
@@ -334,21 +338,45 @@ main {
     margin-top: 65px;
     padding-top: 60px;
     padding-bottom: 40px;
+    justify-content: center;
+    background: #242424 url("../img/texture_footer.png");
 }
 
 .footer-contacts {
-    margin-left: auto;
+    width: 310px;
     margin-right: 90px;
     background: fuchsia;
 }
 
 .footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 140px;
     background: greenyellow;
 }
 
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.footer-social a {
+    display: block;
+    width: 43px;
+    height: 43px;
+    text-decoration: none;
+    background-color: gold;
+    background-image: url("../img/icons.png");
+    background-repeat:  no repeat;
+    background-position: 1px 18px;
+}
+
 .footer-copyright {
-    margin-right: auto;;
-    margin-left: auto;
+    margin-left: 260px;
+    width: 140px;
     background: aqua;
 }
 
