@@ -379,6 +379,7 @@ main {
 
 a.social-btn-vk {
     background-position: 0 -172px;
+    transition: all 0.01s;
 }
 
 a.social-btn-vk:hover,
@@ -389,12 +390,17 @@ a.social-btn-vk:active {
 
 a.social-btn-fb {
     background-position: 0 -129px;
+    transition: all 0.01s;
 }
 
 a.social-btn-fb:hover,
 a.social-btn-fb:active {
     background-position: 0 -86px;
     background-color: white;
+}
+
+a.social-btn-inst {
+    transition: all 0.01s;
 }
 
 a.social-btn-inst:hover,
