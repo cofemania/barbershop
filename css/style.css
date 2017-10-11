@@ -353,7 +353,6 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     width: 140px;
-    background: greenyellow;
 }
 
 .footer-social p {
@@ -363,15 +362,45 @@ main {
     vertical-align: top;
 }
 
-.footer-social a {
+.social-icons {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-btn {
     display: block;
     width: 43px;
     height: 43px;
     text-decoration: none;
-    background-color: gold;
-    background-image: url("../img/icons.png");
-    background-repeat:  no repeat;
-    background-position: 1px 18px;
+    background: black url("../img/icons1.png") no-repeat;
+    background-position: 0 -43px;
+}
+
+a.social-btn-vk {
+    background-position: 0 -172px;
+}
+
+a.social-btn-vk:hover,
+a.social-btn-vk:active {
+    background-color: white;
+    background-position: 0 -215px;
+}
+
+a.social-btn-fb {
+    background-position: 0 -129px;
+}
+
+a.social-btn-fb:hover,
+a.social-btn-fb:active {
+    background-position: 0 -86px;
+    background-color: white;
+}
+
+a.social-btn-inst:hover,
+a.social-btn-inst:active {
+    background-position: 0 0;
+    background-color: white; 
 }
 
 .footer-copyright {
