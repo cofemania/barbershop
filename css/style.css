@@ -44,8 +44,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
     width: 700px;
 }
 
@@ -53,7 +51,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     display: block;
-    padding: 25px 20px;
+    padding: 23px 20px 27px;
     transition: all 0.1s;
 }
 .main-navigator a:hover {
@@ -78,7 +76,6 @@ body {
 
 
 .user-block {
-    margin-right: auto;
     transition: all 0.3s;
 }
 
@@ -87,7 +84,7 @@ body {
     color: #ffffff;
     display: inline-block;
     vertical-align: top;
-    padding: 25px 20px;
+    padding: 23px 20px 27px;
     padding-left: 50px;
     font-size: 16px;
     line-height: 20px;
@@ -97,7 +94,7 @@ body {
 .login::before {
     content: " ";
     position: absolute;
-    top: 28px;
+    top: 24px;
     left: 20px;
     width: 18px;
     height: 17px;
@@ -132,7 +129,7 @@ main {
     margin: 0 auto;
     margin-bottom: 25px;
     background-image: url("/img/index_logo.png") no-repeat;
-    margin-top: 55px;
+    margin-top: 57px;
 }
 
 .index-logo img {
