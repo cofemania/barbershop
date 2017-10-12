@@ -54,9 +54,49 @@ body {
     padding: 23px 20px 27px;
     transition: all 0.1s;
 }
+
 .main-navigator a:hover {
     background: #242424;
 }
+.active {
+    position: relative;
+}
+
+.active::before {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    left: 20px;
+    display: block;
+    content: "";
+    height: 4px;
+    background: white;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.active a:hover,
+.active a:active {
+    background: black;
+}
+
+a.index {
+    width: 140px;
+    padding: 0;
+    background-color: black;
+    background-image: url("../img/Logo_header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a.index:hover {
+    background-color: black;
+    background-image: url("../img/Logo_header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .main-navigator li {
     display: flex;
@@ -114,7 +154,7 @@ opacity: 1;
 -------------index--------------
 ===============================*/
 
-main {
+.index-main {
     width: 940px;
     padding-left: 10px;
     padding-right: 10px;
@@ -420,6 +460,11 @@ a.social-btn-inst:active {
 
 .footer-copyright .btn {
     width: 74px;
+}
+.footer-copyright .btn:hover,
+.footer-copyright .btn:active {
+    background: white;
+    color: black;
 }
 
 /*==============================
