@@ -345,7 +345,6 @@ main {
 .footer-contacts {
     width: 310px;
     margin-right: 90px;
-    background: fuchsia;
 }
 
 .footer-social {
@@ -412,7 +411,18 @@ a.social-btn-inst:active {
 .footer-copyright {
     margin-left: 260px;
     width: 140px;
-    background: aqua;
+}
+
+.footer-copyright p {
+    margin-top: 0;
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer-copyright .btn {
+    width: 74px;
 }
 
 /*==============================
