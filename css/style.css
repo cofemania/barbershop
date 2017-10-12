@@ -468,6 +468,31 @@ a.social-btn-inst:active {
 }
 
 /*==============================
--------------item---------------
+-------------price--------------
 ===============================*/
 
+.price-main {
+    display: flex;
+    justify-content: center;
+    background: #f4f1ee url("../img/texture1.png");
+}
+
+.main-center {
+    display: flex;
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: aquamarine;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about h1 {
+    color: black;
+    text-align: top;
+    font-size: 30px;
+    line-height: 42px;
+}
