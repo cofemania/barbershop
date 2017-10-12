@@ -470,29 +470,118 @@ a.social-btn-inst:active {
 /*==============================
 -------------price--------------
 ===============================*/
-
-.price-main {
-    display: flex;
-    justify-content: center;
+.inner-page {
     background: #f4f1ee url("../img/texture1.png");
-}
 
-.main-center {
+}
+.price-main {
+    color: black;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 940px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
     background: aquamarine;
 }
 
-.about {
+
+.inner-page-tittle {
     display: flex;
-    justify-content: flex-start;
+    margin-top: 55px;
+    flex-wrap: wrap;
+    width: 160px;
+    margin-bottom: 55px;
 }
 
-.about h1 {
+.inner-page-tittle h1 {
     color: black;
     text-align: top;
     font-size: 30px;
     line-height: 42px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.breadcrumbs {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+.breadcrumbs li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+.current {
+    margin-right: 8px;
+    color: #aba9a7;
+}
+
+.breadcrumbs li:first-child {
+    padding-right: 30px;
+    position: relative;
+}
+
+.breadcrumbs li:first-child::before {
+    position: absolute;
+    top: 9px;
+    left: 62px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+}
+
+.inner-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-heading {
+    width: 100%;
+    height: 48px;
+    padding: 0 160px;
+}
+
+.big-heading h2 {
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+    line-height: 48px;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+.big-heading h2::after,
+.big-heading h2::before {
+    position: absolute;
+    top: 24px;
+    right: 620px;
+    display: block;
+    content: "";
+    width: 160px;
+    height: 2px;
+    background: black;
+}
+
+.big-heading h2::before {
+    left: 620px;
 }
