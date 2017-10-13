@@ -575,31 +575,33 @@ a.social-btn-inst:active {
 }
 
 .big-heading {
-    text-align: center;
     width: 100%;
-    height: 50px;
-    padding: 0;
 }
 
 .big-heading h2 {
-    background: #f4f1ee url("../img/texture1.png");    
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
     font-size: 48px;
     line-height: 48px;
     text-align: center;
-    position: relative;
-    display: inline-block;
-    padding: 0 25px;
-    z-index: 2;
-    margin: 0;
 }
 
-.big-heading::after {
+.big-heading h2::after,
+.big-heading h2::before {
     content: "";
-    position: relative;
-    display: block;
-    border: 2px solid black;
-    top: -25px;
-    z-index: 1;
+    flex-grow: 1;
+    width: 50px;
+    height: 2px;
+    background: black;
+}
+
+.big-heading h2::before {
+    margin-right: 25px;
+}
+
+.big-heading h2::after {
+    margin-left: 25px;
 }
 
 
