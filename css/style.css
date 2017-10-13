@@ -498,6 +498,16 @@ a.social-btn-inst:active {
     width: 49%;
 }
 
+.price-content-left *:first-child,
+.price-content-right *:first-child {
+    margin-top: 0;
+}
+
+.price-content-left *:last-child,
+.price-content-right *:last-child {
+    margin-bottom: 0;
+}
+
 
 
 .price-content h2 {
@@ -524,7 +534,7 @@ a.social-btn-inst:active {
 /*Заголовок и хлебные крошки*/
 .price-page-tittle {
     display: flex;
-    margin-top: 55px;
+    margin-top: 52px;
     flex-wrap: wrap;
     width: 160px;
     margin-bottom: 55px;
@@ -591,6 +601,7 @@ a.social-btn-inst:active {
 .big-heading h2 {
     display: flex;
     align-items: center;
+    margin: 0;
     margin-bottom: 65px;
     font-size: 48px;
     line-height: 48px;
@@ -666,4 +677,8 @@ a.social-btn-inst:active {
 /*Нижние абзацы*/
 .price-content-right p {
     margin-top: 120px;
+}
+
+.price-content:last-child h2 {
+    width: 100%;
 }
