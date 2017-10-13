@@ -607,7 +607,6 @@ a.social-btn-inst:active {
 
 .features-price {
     width: 100%;
-    background: gray;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -620,4 +619,44 @@ a.social-btn-inst:active {
 .features-price p:last-child {
     margin-right: 80px;
     margin-left: auto;
+}
+
+.custom-list-1 {
+    margin: 14px 0;
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list-1 li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.custom-list-1 li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    left: 0px;
+    transform: rotate(45deg);
+    background: black;
+}
+
+.services-price {
+    width: 49%;
+}
+
+.prices-table {
+    width: 100%;
+}
+
+.prices-table td {
+    width: 50%;
+}
+
+.prices-table td:last-of-type {
+    text-align: center;
 }
