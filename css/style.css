@@ -470,10 +470,11 @@ a.social-btn-inst:active {
 /*==============================
 -------------price--------------
 ===============================*/
-.inner-page {
+.price-page {
     background: #f4f1ee url("../img/texture1.png");
-
 }
+
+/*Основное и сетка*/
 .price-main {
     color: black;
     display: flex;
@@ -486,8 +487,40 @@ a.social-btn-inst:active {
     padding-right: 10px;
 }
 
+.price-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-.inner-page-tittle {
+.price-content-right,
+.price-content-left {
+    width: 49%;
+}
+
+.price-content h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.price-content p {
+    margin: 14px 0;
+}
+
+.price-content table {
+    border-collapse: collapse;
+}
+
+.price-content td {
+    padding: 10px 15px;
+    border: 2px solid black;
+}
+/*---------------------------------*/
+
+/*Заголовок и хлебные крошки*/
+.price-page-tittle {
     display: flex;
     margin-top: 55px;
     flex-wrap: wrap;
@@ -495,7 +528,7 @@ a.social-btn-inst:active {
     margin-bottom: 55px;
 }
 
-.inner-page-tittle h1 {
+.price-page-tittle h1 {
     color: black;
     text-align: top;
     font-size: 30px;
@@ -542,38 +575,13 @@ a.social-btn-inst:active {
     transform: rotate(45deg);
 }
 
-
 .breadcrumbs a {
     text-decoration: none;
     color: black;
 }
+/*--------------------------*/
 
-.inner-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
-}
-
-.inner-content h2 {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 30px;
-}
-
-.inner-content p {
-    margin: 14px 0;
-}
-
-.inner-content table {
-    border-collapse: collapse;
-}
-
-.inner-content td {
-    padding: 10px 15px;
-    border: 2px solid black;
-}
-
+/*Основной центральный заголовок*/
 .big-heading {
     width: 100%;
 }
@@ -603,23 +611,14 @@ a.social-btn-inst:active {
 .big-heading h2::after {
     margin-left: 25px;
 }
+/*--------------------------*/
 
+/*Список средств*/
 
-.features-price {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.features-price h2 {
+.price-content-right h2 {
     width: 100%;
 }
 
-.features-price p:last-child {
-    margin-right: 80px;
-    margin-left: auto;
-}
 
 .custom-list-1 {
     margin: 14px 0;
@@ -644,19 +643,25 @@ a.social-btn-inst:active {
     transform: rotate(45deg);
     background: black;
 }
+/*--------------------------*/
 
-.services-price {
-    width: 49%;
-}
+/*Таблица*/
 
-.prices-table {
+
+.price-table {
     width: 100%;
 }
 
-.prices-table td {
+.price-table td {
     width: 50%;
 }
 
-.prices-table td:last-of-type {
+.price-table td:last-of-type {
     text-align: center;
+}
+/*--------------------------------*/
+
+/*Нижние абзацы*/
+.price-content-right p {
+    margin-top: 120px;
 }
