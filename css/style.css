@@ -376,6 +376,7 @@ opacity: 1;
     padding-top: 60px;
     padding-bottom: 40px;
     justify-content: center;
+    box-shadow: inset 0 30px 40px -15px black;
     background: #242424 url("../img/texture_footer.png");
 }
 
@@ -681,4 +682,8 @@ a.social-btn-inst:active {
 
 .price-content:last-child h2 {
     width: 100%;
+}
+
+.short-text {
+    padding-right: 80px;
 }
