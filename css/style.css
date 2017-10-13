@@ -484,7 +484,6 @@ a.social-btn-inst:active {
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
-    background: aquamarine;
 }
 
 
@@ -552,36 +551,71 @@ a.social-btn-inst:active {
 .inner-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.inner-content h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.inner-content p {
+    margin: 14px 0;
+}
+
+.inner-content table {
+    border-collapse: collapse;
+}
+
+.inner-content td {
+    padding: 10px 15px;
+    border: 2px solid black;
 }
 
 .big-heading {
+    text-align: center;
     width: 100%;
-    height: 48px;
-    padding: 0 160px;
+    height: 50px;
+    padding: 0;
 }
 
 .big-heading h2 {
-    position: relative;
+    background: #f4f1ee url("../img/texture1.png");    
     font-size: 48px;
-    text-align: center;
     line-height: 48px;
-    vertical-align: top;
-    padding: 0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+    z-index: 2;
     margin: 0;
 }
 
-.big-heading h2::after,
-.big-heading h2::before {
-    position: absolute;
-    top: 24px;
-    right: 620px;
-    display: block;
+.big-heading::after {
     content: "";
-    width: 160px;
-    height: 2px;
-    background: black;
+    position: relative;
+    display: block;
+    border: 2px solid black;
+    top: -25px;
+    z-index: 1;
 }
 
-.big-heading h2::before {
-    left: 620px;
+
+.features-price {
+    width: 100%;
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-price h2 {
+    width: 100%;
+}
+
+.features-price p:last-child {
+    margin-right: 80px;
+    margin-left: auto;
 }
