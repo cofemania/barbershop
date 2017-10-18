@@ -365,7 +365,9 @@ opacity: 1;
 
 /*Окно логина*/
 .modal-content {
+    display: flex;
     position: absolute;
+    flex-wrap: wrap;
     top: 120px;
     left: 50%;
     width: 300px;
@@ -427,9 +429,8 @@ opacity: 1;
     border-color: #663d15;
 }
 
-.icon-user,
-.password {
-    position: relative;
+.login-form input[type="password"] {
+    margin-bottom: 20px;
 }
 
 .icon-user::after {
@@ -442,24 +443,51 @@ opacity: 1;
     top: -42px;
     left: 270px;
 }
+.icon-user::before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 17px;
+    background: #f9f6f3 url("../img/icons1.png") no-repeat 0 -273px;
+    top: 104px;
+    left: 270px;
+}
 
 .modal-content h2 {
     margin: 0;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 42px;
+    
 }
 
-.modal-contentp {
+.modal-content p {
     margin: 0;
-    margin-bottom: 14px;
     font-size: 14px;
 }
 
-.modal-content .login-form {
-    margin-top: 30px;
-    margin-bottom: 10px;
+.login-checkbox {
+    float: left;
+    width: 50%;
 }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.restore {
+    color: black;
+    float: right;
+    margin-bottom: 20px;
+}
+
+
+
+.login-form .btn {
+    width: 100%;
+}
+
 /*--------------------*/
 
 /*==============================
