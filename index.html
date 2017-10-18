@@ -140,9 +140,13 @@
                 <h2 class="modal-content-title">Личный кабинет</h2>
                 <p>Введите пожалуйста свой логин и пароль</p>
                 <form class="login-form" method="post" action="#">
-                    <input class="icon-user" type="text" name="login" placeholder="Логин">
-                    <input class="icon-password" type="password" name="password" placeholder="Пароль">
-                    <label class="login-checkbox" for="remember">
+                    <div class="icon-user">
+                        <input type="text" name="login" placeholder="Логин">
+                    </div>
+                    <div class="icon-password">
+                        <input type="password" name="password" placeholder="Пароль">
+                    </div>
+                        <label class="login-checkbox" for="remember">
                         <input type="checkbox" name="remember" id="remember">
                         <span class="checkbox-indicator">Запомните меня</span>
                     </label>

@@ -300,6 +300,8 @@ opacity: 1;
     vertical-align: top;
     text-align: center;
     margin-right: 16px;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;    
 }
 
 .btn:active,
@@ -402,6 +404,61 @@ opacity: 1;
 
 .modal-content-close::before {
     transform: rotate(-45deg);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    width: 241px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    padding-right: 40px; 
+    border: 2px solid black;
+    background: #f9f6f3;   
+}
+
+.login-form input:focus {
+    border-color: #663d15;
+}
+
+.icon-user,
+.password {
+    position: relative;
+}
+
+.icon-user::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #f9f6f3 url("../img/icons1.png") no-repeat 0 -258px;
+    top: -42px;
+    left: 270px;
+}
+
+.modal-content h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal-contentp {
+    margin: 0;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.modal-content .login-form {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 /*--------------------*/
 
