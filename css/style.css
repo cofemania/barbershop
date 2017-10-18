@@ -250,6 +250,11 @@ opacity: 1;
 .index-content-right {
     width: 300px;
 }
+
+.news-preview {
+    margin-bottom: 34px;
+}
+
 .news-preview li {
     margin-left: -40px;
     list-style: none;
