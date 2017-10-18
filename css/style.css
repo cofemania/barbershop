@@ -429,9 +429,6 @@ opacity: 1;
     border-color: #663d15;
 }
 
-.login-form input[type="password"] {
-    margin-bottom: 20px;
-}
 
 .icon-user::after {
     position: relative;
@@ -470,16 +467,55 @@ opacity: 1;
 .login-checkbox {
     float: left;
     width: 50%;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
 }
 
-input[type="checkbox"] {
+.login-checkbox:hover {
+    color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] {
     display: none;
+}
+
+
+.login-checkbox::before {
+    content:"";
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid black;
+}
+
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    width: 15px;
+    height: 2px;
+    background: black;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
 }
 
 .restore {
     color: black;
     float: right;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 
