@@ -719,12 +719,14 @@ a.social-btn-inst:active {
 /*==============================
 -------------price--------------
 ===============================*/
-.price-page {
+.price-page,
+.item-page {
     background: #f4f1ee url("../img/texture1.png");
 }
 
 /*Основное и сетка*/
-.price-main {
+.price-main,
+.main_item {
     color: black;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -792,7 +794,7 @@ a.social-btn-inst:active {
 /*---------------------------------*/
 
 /*Заголовок и хлебные крошки*/
-.price-page-tittle {
+.price-page-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -803,7 +805,7 @@ a.social-btn-inst:active {
     margin-bottom: 55px;
 }
 
-.price-page-tittle h1 {
+.price-page-title h1 {
     color: black;
     text-align: top;
     font-size: 30px;
@@ -962,4 +964,127 @@ a.social-btn-inst:active {
 
 .short-text {
     padding-right: 80px;
+}
+
+/*---------------------------------------*/
+
+/*==============================
+-------------item---------------
+===============================*/
+
+/*хлебные крошки*/
+.item-page-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 52px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 630px;
+    margin-bottom: 55px;
+}
+
+.item-page-title h1 {
+    color: black;
+    text-align: top;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.breadcrumbs-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 18px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+.breadcrumbs-item li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+.breadcrumbs-item {
+    margin-right: 8px;
+    color: #aba9a7;
+}
+
+.breadcrumbs-item li:not(:last-child) {
+    padding-right: 30px;
+    position: relative;
+}
+
+.breadcrumbs-item li:not(:last-child)::before {
+    position: absolute;
+    top: 9px;
+    left: 62px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: black;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.breadcrumbs-item li:nth-child(2)::before {
+    left: 65px;
+}
+
+.breadcrumbs-item li:nth-child(3)::before {
+    left: 135px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+}
+/*----------------------------------*/
+
+/*галерея*/
+.item-content-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 460px;
+    justify-content: space-between;
+    background: darkcyan;
+}
+
+.gallery-main {
+    width: 460px;
+    height: 500px;
+}
+
+.gallery-main img {
+    margin-left: 0;
+}
+
+.gallery-both {
+    width: 460px;
+    height: 149px;
+    padding: 0;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-both a {
+    display: block;
+    width: 140px;
+    height: 149px;
+    box-shadow: 0 0 5px 1px gray;
+}
+
+.gallery-left {
+    background: gray url("../img/gallery-left.png") no-repeat;
 }
