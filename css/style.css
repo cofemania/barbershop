@@ -995,9 +995,14 @@ a.social-btn-inst:active {
 }
 
 .item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 /*----------------------------------*/
@@ -1083,10 +1088,15 @@ a.social-btn-inst:active {
 
 /*галерея*/
 .item-content-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 460px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .gallery-main {
@@ -1097,7 +1107,8 @@ a.social-btn-inst:active {
 .gallery-main img {
     margin-top: -14px;
     margin-left: -40px;
-    box-shadow: 0 0 15px 5px #e4e2df;
+    -webkit-box-shadow: 0 0 15px 5px #e4e2df;
+            box-shadow: 0 0 15px 5px #e4e2df;
 }
 
 .gallery-both {
@@ -1105,15 +1116,20 @@ a.social-btn-inst:active {
     height: 149px;
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .gallery-both a {
     display: block;
     width: 140px;
     height: 149px;
-    box-shadow: 0 0 15px 5px #e4e2df;
+    -webkit-box-shadow: 0 0 15px 5px #e4e2df;
+            box-shadow: 0 0 15px 5px #e4e2df;
 }
 
 .gallery-left {
@@ -1129,17 +1145,27 @@ a.social-btn-inst:active {
 
 /*Описание товара*/
 .item-content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 400px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 22px 10px;
 }
 
 .article-product {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 34px;
 }
 
@@ -1207,6 +1233,7 @@ a.buy-btn {
     background: black;
     top: 8px;
     left: -20px;
-    transform: rotate(45deg);
-
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
