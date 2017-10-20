@@ -1057,7 +1057,6 @@ a.social-btn-inst:active {
     flex-wrap: wrap;
     width: 460px;
     justify-content: space-between;
-    background: darkcyan;
 }
 
 .gallery-main {
@@ -1066,14 +1065,16 @@ a.social-btn-inst:active {
 }
 
 .gallery-main img {
-    margin-left: 0;
+    margin-top: -14px;
+    margin-left: -40px;
+    box-shadow: 0 0 15px 5px #e4e2df;
 }
 
 .gallery-both {
     width: 460px;
     height: 149px;
     padding: 0;
-    margin-top: 22px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -1082,9 +1083,15 @@ a.social-btn-inst:active {
     display: block;
     width: 140px;
     height: 149px;
-    box-shadow: 0 0 5px 1px gray;
+    box-shadow: 0 0 15px 5px #e4e2df;
 }
 
 .gallery-left {
     background: gray url("../img/gallery-left.png") no-repeat;
+}
+.gallery-center {
+    background: gray url("../img/gallery-center.png") no-repeat;
+}
+.gallery-right {
+    background: gray url("../img/gallery-right.png") no-repeat;    
 }
