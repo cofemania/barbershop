@@ -999,7 +999,8 @@ a.social-btn-inst:active {
     margin-bottom: 55px;
 }
 
-.item-page-title h1 {
+.item-page-title h1,
+.shop-page-title h1 {
     color: black;
     text-align: top;
     font-size: 30px;
@@ -1008,7 +1009,8 @@ a.social-btn-inst:active {
     margin-top: 0;
 }
 
-.breadcrumbs-item {
+.breadcrumbs-item,
+.breadcrumbs-shop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1021,24 +1023,28 @@ a.social-btn-inst:active {
     width: 100%;
 }
 
-.breadcrumbs-item li {
+.breadcrumbs-item li,
+.breadcrumbs-shop li {
     list-style: none;
     font-size: 14px;
     line-height: 24px;
     vertical-align: top;
 }
 
-.breadcrumbs-item {
+.breadcrumbs-item,
+.breadcrumbs-shop {
     margin-right: 8px;
     color: #aba9a7;
 }
 
-.breadcrumbs-item li:not(:last-child) {
+.breadcrumbs-item li:not(:last-child),
+.breadcrumbs-shop li:not(:last-child) {
     padding-right: 30px;
     position: relative;
 }
 
-.breadcrumbs-item li:not(:last-child)::before {
+.breadcrumbs-item li:not(:last-child)::before,
+.breadcrumbs-shop li:not(:last-child)::before {
     position: absolute;
     top: 9px;
     left: 62px;
@@ -1052,7 +1058,8 @@ a.social-btn-inst:active {
             transform: rotate(45deg);
 }
 
-.breadcrumbs-item li:nth-child(2)::before {
+.breadcrumbs-item li:nth-child(2)::before,
+.breadcrumbs-shop li:nth-child(2)::before {
     left: 65px;
 }
 
@@ -1060,7 +1067,9 @@ a.social-btn-inst:active {
     left: 135px;
 }
 
-.breadcrumbs a {
+.breadcrumbs a,
+.breadcrumbs-item a,
+.breadcrumbs-shop a {
     text-decoration: none;
     color: black;
 }
@@ -1224,4 +1233,14 @@ a.buy-btn {
 --------------shop--------------
 ===============================*
 
-/*Разметка*/
+/*Хлебные крошки*/
+.shop-page-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 52px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 300px;
+    margin-bottom: 55px;
+}
