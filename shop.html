@@ -37,7 +37,7 @@
                 </div>
             </div>
         </header>
-        <main class="inear-main">
+        <main class="inear-main shop-main">
             <div class="shop-page-title">
                 <h1>Средства для ухода</h1>
                 <ul class="breadcrumbs-shop">
@@ -54,28 +54,47 @@
                 <form action="echo" method="post">
                     <fieldset class="brands">
                         <legend>Производители:</legend>
-                        <input type="checkbox" value="Baxter-of-California" name="Baxter-of-California" id="Baxter-of-California" checked>
-                        <label for="Baxter-of-California">Baxter of California</label>
-                        <input type="checkbox" value="Mr-Natty" name="Mr-Natty" id="Mr-Natty">
-                        <label for="Mr-Natty">Mr Natty</label>
-                        <input type="checkbox" value="Suavecito" name="Suavecito" id="Suavecito" checked>
-                        <label for="Suavecito">Suavecito</label>
-                        <input type="checkbox" value="Malin+Goetz" name="Malin+Goetz" id="Malin+Goetz">
-                        <label for="Malin+Goetz">Malin+Goetz</label>
-                        <input type="checkbox" value="Murray’s" name="Murray’s" id="Murray’s">
-                        <label for="Murray’s">Murray’s</label>
-                        <input type="checkbox" value="American-Crew" name="American-Crew" id="American-Crew" checked>
-                        <label for="American-Crew">American Crew</label>
+                        <label for="Baxter-of-California">
+                            <input type="checkbox" value="Baxter-of-California" name="brands" id="Baxter-of-California" checked>
+                            <span>Baxter of California</span>
+                        </label>
+                        <label for="Mr-Natty">
+                            <input type="checkbox" value="Mr-Natty" name="brands" id="Mr-Natty">
+                            <span>Mr Natty</span>
+                        </label>
+                        <label for="Suavecito">
+                            <input type="checkbox" value="Suavecito" name="brands" id="Suavecito" checked>
+                            <span>Suavecito</span>
+                        </label>
+                        <label for="Malin+Goetz">
+                            <input type="checkbox" value="Malin+Goetz" name="brands" id="Malin+Goetz">
+                            <span>Malin+Goetz</span>
+                        </label>
+                        <label for="Murray’s">
+                            <input type="checkbox" value="Murray’s" name="brands" id="Murray’s">
+                            <span>Murray’s</span>
+                        </label>
+                        <label for="American-Crew">
+                            <input type="checkbox" value="American-Crew" name="brands" id="American-Crew" checked>    
+                            <span>American Crew</span>
+                        </label>
                     </fieldset>
                     <fieldset class="groups">
                         <legend>Группы товаров</legend>
-                        <input type="radio" value="Shaving-accessories" name="Shaving-accessories" id="Shaving-accessories">
-                        <label for="Shaving-accessories">Бритвенные принадлежности</label>
-                        <input type="radio" value="Means-for-care" name="Means-for-care" id="Means-for-care" checked>
-                        <label for="Means-for-care">Средства для ухода</label>
-                        <input type="radio" value="Accessories" name="Accessories" id="Accessories">
-                        <label for="Accessories">Аксессуары</label>
+                        <label for="Shaving-accessories">
+                            <input type="radio" value="Shaving-accessories" name="groups" id="Shaving-accessories">
+                            <span>Бритвенные принадлежности</span>
+                        </label>
+                        <label for="Means-for-care">
+                            <input type="radio" value="Means-for-care" name="groups" id="Means-for-care" checked>
+                            <span>Средства для ухода</span>
+                        </label>
+                        <label for="Accessories">
+                            <input type="radio" value="Accessories" name="groups" id="Accessories">
+                            <span>Аксессуары</span>
+                        </label>
                     </fieldset>
+                    <input type="button" value="Показать" class="btn">
                 </form>
             </section>
             <section class="shop-content-right">
