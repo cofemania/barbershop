@@ -722,13 +722,12 @@ a.social-btn-inst:active {
 /*==============================
 -------------price--------------
 ===============================*/
-.price-page,
-.item-page {
+.inear-page {
     background: #f4f1ee url("../img/texture1.png");
 }
 
 /*Основное и сетка*/
-.price-main {
+.inear-main {
     color: black;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -975,25 +974,6 @@ a.social-btn-inst:active {
 ===============================*/
 
 /*сетка*/
-.main-item {
-    color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .item-content {
     display: -webkit-box;
     display: -ms-flexbox;
