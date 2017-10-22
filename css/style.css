@@ -1176,23 +1176,32 @@ a.social-btn-inst:active {
 }
 
 .pruduct-buy {
-    width: 187px;
+    width: 100%;
     height: 43px;
     background: #e5e5e5;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .product-buy span {
     display: inline-block;
     background: #e5e5e5;
-    width: 109px;
+    width: 111px;
     text-align: center;
-    padding-top: auto;
-    padding-bottom: auto;
-    line-height: 43px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 0;
+    color: black;
+    box-shadow: 3px 0 2px 0 #e5e5e5;
+
 }
 
-a.buy-btn {
-    padding: auto 18px;
+.buy-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 0;
+    color: white;
 }
 
 .product-composition h2 {
@@ -1269,6 +1278,12 @@ main.shop-main {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+}
+.brands {
+    margin-bottom: 35px;
+}
+
+.groups {
     margin-bottom: 25px;
 }
 
@@ -1288,7 +1303,7 @@ main.shop-main {
 .groups label {
     padding-left: 43px;
     line-height: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 17px;
     position: relative;
     cursor: pointer;
 }
@@ -1348,4 +1363,98 @@ main.shop-main {
 .shop-content-right {
     width: 700px;
     padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.shop-item {
+    width: 220px;
+    height: 286px;
+    background: white;
+    box-shadow: 0 0 10px 5px #e4e2df;
+    margin-bottom: 20px;
+}
+
+.shop-item:hover,
+.shop-item:active {
+    box-shadow: 0 0 10px 5px #cac8c6;
+}
+
+.shop-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.shop-item h3 {
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    margin-left: 16px;
+}
+
+.shop-item h2 {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-left: 16px;
+}
+
+.shop-item .product-buy {
+    margin-left: 16px;
+}
+
+.shop-item .product-buy a {
+    color: white;
+}
+/*------------------------------*/
+
+
+/*Счетчик страниц*/
+.page-marker {
+    width: 193px;
+    height: 43px;
+    padding: 0;
+    margin: 0;
+    margin-left: 240px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: -25px;
+}
+
+.page-marker a {
+    display: inline-block;
+    background: #000000;
+    color: #f4f1ee;
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    letter-spacing: 0;
+    cursor: pointer;
+    padding: 12px 17px;
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", "Arial", sans-serif; 
+}
+
+.active-page {
+    background: white;
+    color: black;
+    cursor: default;
+}
+
+.page-marker a:active,
+.page-marker a:hover {
+    background: #663d15;
+}
+
+
