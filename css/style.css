@@ -1245,8 +1245,12 @@ a.social-btn-inst:active {
 
 /*Хлебные крошки*/
 main.shop-main {
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .shop-page-title {
@@ -1258,8 +1262,13 @@ main.shop-main {
         flex-wrap: wrap;
     width: 100%;
     margin-bottom: 55px;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .breadcrumbs-shop {
     width: 300px;
@@ -1276,8 +1285,11 @@ main.shop-main {
     border: none;
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .brands {
     margin-bottom: 35px;
@@ -1333,11 +1345,15 @@ main.shop-main {
 }
 
 .brands input[type="checkbox"]:checked + span::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .brands input[type="checkbox"]:checked + span::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .groups label::before {
@@ -1363,22 +1379,29 @@ main.shop-main {
 .shop-content-right {
     width: 700px;
     padding-left: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .shop-item {
     width: 220px;
     height: 286px;
     background: white;
-    box-shadow: 0 0 10px 5px #e4e2df;
+    -webkit-box-shadow: 0 0 10px 5px #e4e2df;
+            box-shadow: 0 0 10px 5px #e4e2df;
     margin-bottom: 20px;
 }
 
 .shop-item:hover,
 .shop-item:active {
-    box-shadow: 0 0 10px 5px #cac8c6;
+    -webkit-box-shadow: 0 0 10px 5px #cac8c6;
+            box-shadow: 0 0 10px 5px #cac8c6;
 }
 
 .shop-item a {
@@ -1422,8 +1445,12 @@ main.shop-main {
     padding: 0;
     margin: 0;
     margin-left: 240px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 45px;
     margin-bottom: -25px;
 }
@@ -1456,6 +1483,5 @@ a.active-page {
     color: black;
     cursor: default;
 }
-
 
 
