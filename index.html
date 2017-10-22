@@ -159,5 +159,15 @@
             <div id="yandex-map"></div>
         </div>
         <div class="modal-overlay"></div>
+        <script>
+            var login = document.querySelector(".login");
+            var popup = document.querySelector(".modal-content");
+
+            login.addEventListener("click", function(event) {
+                console.log("Клик мышью по кнопке вход");
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+            });
+        </script>
     </body>
 </html>
