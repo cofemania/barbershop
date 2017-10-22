@@ -1446,15 +1446,16 @@ main.shop-main {
     font-family: "PT Sans Narrow", "Arial", sans-serif; 
 }
 
-.active-page {
+.page-marker a:not(.active-page):active,
+.page-marker a:not(.active-page):hover {
+    background: #663d15;
+}
+
+a.active-page {
     background: white;
     color: black;
     cursor: default;
 }
 
-.page-marker a:active,
-.page-marker a:hover {
-    background: #663d15;
-}
 
 
