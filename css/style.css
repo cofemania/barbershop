@@ -595,6 +595,12 @@ opacity: 1;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
+
+.modal-overlay-show {
+    display: block;
+}
+
+
 /*-------------------------*/
 
 

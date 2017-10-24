@@ -141,10 +141,10 @@
             <p>Введите пожалуйста свой логин и пароль</p>
             <form class="login-form" method="post" action="#">
                 <div class="icon-user">
-                    <input type="text" name="login" placeholder="Логин">
+                    <input type="text" name="login" placeholder="Логин" required>
                 </div>
                 <div class="icon-password">
-                    <input type="password" name="password" placeholder="Пароль">
+                    <input type="password" name="password" placeholder="Пароль" required>
                 </div>
                     <label class="login-checkbox" for="remember">
                         <input type="checkbox" name="remember" id="remember">
@@ -160,18 +160,40 @@
         </div>
         <div class="modal-overlay"></div>
         <script>
-            var login = document.querySelector(".login");
+            var link = document.querySelector(".login");
             var popup = document.querySelector(".modal-content");
             var close = document.querySelector(".modal-content-close");
+            var shadow = document.querySelector(".modal-overlay");
+            var login = popup.querySelector("[name=login]");
+            var password = popup.querySelector("[name=password");
+            var form = popup.querySelector("form");
+            var storage = localStorage.getItem("login");
 
-            login.addEventListener("click", function(event) {
+            link.addEventListener("click", function(event) {
                 event.preventDefault();
                 popup.classList.add("modal-content-show");
+                login.focus();
+                if (storage) {
+                    login.value = storage;
+                }
+                shadow.classList.add("modal-overlay-show");
             });
             close.addEventListener("click", function(event){
                 event.preventDefault();
                 popup.classList.remove("modal-content-show");
-            })
+                shadow.classList.remove("modal-overlay-show");
+            });
+            shadow.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+                shadow.classList.remove("modal-overlay-show"); 
+            });
+            form.addEventListener("submit", function(event) {
+                if (!login.value || !password.value) {
+                    event.preventDefault();
+                } else {
+                    localStorage.setItem("login", login.value);                }
+            });
         </script>
     </body>
 </html>
