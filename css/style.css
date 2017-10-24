@@ -407,8 +407,25 @@ opacity: 1;
     background: #f4f1ee url("../img/texture1.png");
 }
 
+@keyframes bounse {
+    0% {transform: translateY(-2000px);}
+    5% {transform: translateY(-1800px);}
+    10% {transform: translateY(-1600px);}
+    15% {transform: translateY(-1500px);}
+    20% {transform: translateY(-1300px);}
+    25% {transform: translateY(-1000px);}
+    30% {transform: translateY(-500px);}
+    55% {transform: translateY(5px);}
+    60% {transform: translateY(10px);}
+    65% {transform: translateY(15px);}
+    70% {transform: translateY(25px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
 .modal-content-show {
     display: block;
+    animation: bounse 0.5s;
 }
 
 .modal-content-close {
@@ -523,7 +540,7 @@ opacity: 1;
     content:"";
     position: absolute;
     display: block;
-    top: -3px;
+    top: -0px;
     left: 0;
     width: 17px;
     height: 17px;
@@ -535,7 +552,7 @@ opacity: 1;
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 3px;
     width: 15px;
     height: 2px;
